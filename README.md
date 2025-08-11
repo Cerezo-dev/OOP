@@ -1,2 +1,3 @@
 # OOP
-ciclo 2 programacion orientado a objetos
+|ciclo 2|
+|programacion orientada a objetos|
