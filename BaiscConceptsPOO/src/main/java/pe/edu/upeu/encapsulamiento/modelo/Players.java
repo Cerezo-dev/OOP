@@ -8,7 +8,8 @@ import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Data //genera todos los metodos get y set
+//@ToString
 public class Players {
 
     //atributo
