@@ -1,4 +1,4 @@
-package pe.edu.upeu.Herncia;
+package pe.edu.upeu.Herencia;
 
 public class Car extends Vehicle{
     String modelo = "Corolla";
