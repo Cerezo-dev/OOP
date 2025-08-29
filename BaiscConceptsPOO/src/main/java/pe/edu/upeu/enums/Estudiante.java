@@ -26,9 +26,9 @@ public class Estudiante {
 
         System.out.println(juan.codigo +" "+juan.genero+" "+juan.carrera);
 
-        for (int i = 0; i < 10; i++) {
+        for (Carrera carreras: Carrera.values()) {
 
-            System.out.println();
+            System.out.println(carreras);
 
         }
     }
