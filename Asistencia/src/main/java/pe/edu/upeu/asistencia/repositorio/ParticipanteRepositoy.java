@@ -9,7 +9,7 @@ import pe.edu.upeu.asistencia.modelo.Participante;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class ParicipanteRepositoy {
+public abstract class ParticipanteRepositoy {
     protected List<Participante> participantes = new ArrayList<>();
 
     public List<Participante> findAll() {

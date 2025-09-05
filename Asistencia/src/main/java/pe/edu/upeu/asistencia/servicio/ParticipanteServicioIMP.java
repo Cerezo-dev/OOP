@@ -1,11 +1,11 @@
 package pe.edu.upeu.asistencia.servicio;
 
 import pe.edu.upeu.asistencia.modelo.Participante;
-import pe.edu.upeu.asistencia.repositorio.ParicipanteRepositoy;
+import pe.edu.upeu.asistencia.repositorio.ParticipanteRepositoy;
 
 import java.util.List;
 
-public class ParicipanteServicioIMP extends ParicipanteRepositoy
+public class ParticipanteServicioIMP extends ParticipanteRepositoy
         implements ParticipanteServicioI {
 
     @Override
