@@ -7,7 +7,7 @@
    <top>
       <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
         <menus>
-          <Menu fx:id="menu1" mnemonicParsing="false" text="File">
+          <Menu fx:id="menu1" mnemonicParsing="false" text="Options">
             <items>
               <MenuItem fx:id="menuItem1" mnemonicParsing="false" text="Asistencia" />
                 <MenuItem fx:id="menuItem2" mnemonicParsing="false" text="Participante" />
@@ -20,7 +20,7 @@
    <center>
       <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
         <tabs>
-          <Tab text="Untitled Tab 1">
+          <Tab text="main menu">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
             </content>
