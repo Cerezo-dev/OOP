@@ -39,12 +39,12 @@ public class ParticipanteController {
     int indexEdit=-1;
     @FXML
     public void initialize() {
-        cbxCarrera.getItems().setAll(Carrera.values());
-        cbxTipoParticipante.getItems().setAll(TipoParticipante.values());
+        cbxCarrera.getItems().addAll(Carrera.values());
+        cbxTipoParticipante.getItems().addAll(TipoParticipante.values());
         cbxCarrera.getSelectionModel().select(Carrera.GENERAL);
 
         Carrera carrera=cbxCarrera.getSelectionModel().getSelectedItem();
-        System.out.println(carrera);
+        System.out.println(carrera.name());
         definirColumnas();
         listarParticipantes();
     }
@@ -88,6 +88,7 @@ public class ParticipanteController {
         carreraCol = new TableColumn<>("Carrera");
         tipoParticipanteCol = new TableColumn<>("Tipo Participante");
         opcCol = new TableColumn<>("Opciones");
+        opcCol.setPrefWidth(200);
         tableRegPart.getColumns().addAll(dniCol, nombreCol, apellidoCol, carreraCol, tipoParticipanteCol, opcCol);
     }
 
@@ -98,6 +99,10 @@ public class ParticipanteController {
         carreraCol.setCellValueFactory(
                 cellData -> new SimpleStringProperty(cellData.getValue().getCarrera().toString())
         );
+        tipoParticipanteCol.setCellValueFactory(
+                cellData -> new SimpleStringProperty(cellData.getValue().getTipoParticipante().toString())
+        );
+
         agregarAccionesButton();
         participantes = FXCollections.observableArrayList(ps.findAll());
         tableRegPart.setItems(participantes);
