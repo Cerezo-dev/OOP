@@ -21,4 +21,4 @@ public class Participante {
     private BooleanProperty estado;
 
 
-}2
+}
