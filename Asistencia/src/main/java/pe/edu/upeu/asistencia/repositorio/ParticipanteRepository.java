@@ -72,10 +72,24 @@ public abstract class ParticipanteRepository {
             pst.setString(++i, p.getTipoParticipante().name());
             pst.setBoolean(++i, p.getEstado().getValue());
             pst.setString(++i, p.getDni().getValue());
+            pst.executeUpdate();
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         return p;
+
+    }
+
+    public void delete(String dni) {
+        String sql = "DELETE FROM participante WHERE dni=? ";
+        int i=0;
+        try {
+            pst=con.prepareStatement(sql);
+            pst.setString(++i, dni);
+            pst.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
