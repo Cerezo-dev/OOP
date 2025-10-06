@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f42485c-0148-40e5-87f0-39c8379c84eb" name="Changes" comment="add initial application setup with Font Awesome 5.15.4 and participant management views">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/asistencia/Aplicacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/asistencia/AsistenciaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/asistencia/control/AsistenciaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/asistencia/control/MainguiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/asistencia/enums/Facultad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/asistencia/enums/TipoParticipante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/estilo-azul.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/estilo-oscuro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/estilo-rosado.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/estilo-verde.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/main_asistencia.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/main_participante.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/maingui.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pe/edu/upeu/asistencia/AsistenciaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/Herencia/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/Herencia/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/claseinterface/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/claseinterface/ClaseGeneral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/claseinterface/Gato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/claseinterface/Loro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/claseinterna/ClaseExterna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/encapsulamiento/ClaseGeneral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/encapsulamiento/modelo/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/encapsulamiento/modelo/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/encapsulamiento/modelo/Players.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/enums/Carrera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/enums/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/polimorfismoAbstraccion/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/polimorfismoAbstraccion/ClaseMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/polimorfismoAbstraccion/Loro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/polimorismo/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/polimorismo/ClaseGeneral.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/main/java/pe/edu/upeu/polimorismo/Loro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiscConceptsPOO/src/test/java/pe/edu/upeu/AppTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="dev-Web" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="31k1Uk8ekFD4AlvzQJeYzyW2QRk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Aplicacion.executor": "Run",
+    "Application.ConnDB.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "885",
+    "RequestMappingsPanelWidth1": "884",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "/home/shunn/.local/share/JetBrains/IntelliJIdea2025.2/Shell Script/shellcheck",
+    "Spring Boot.AsistenciaApplication.executor": "Run",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "dev-Ventas",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/shunn/Documentos/GitHub/OOP/Asistencia/src/main/java/pe/edu/upeu/asistencia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/pe/edu/upeu/asistencia" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AsistenciaApplication">
+    <configuration name="Aplicacion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="java \   --module-path /ruta/a/javafx/lib:target/classes \   --add-modules javafx.controls,javafx.fxml,javafx.graphics \   --enable-nati" value="e-=cc=ss=javafx.graphics \   --illegal-native-access=deny \   --sun-misc-unsafe-memory-access=allow \   -classpath &lt;otras librerías no modulares&gt; \   tu.paquete.Principal " />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="pe.edu.upeu.asistencia.Aplicacion" />
+      <module name="Asistencia" />
+      <option name="VM_PARAMETERS" value="--enable-native-access=ALL-UNNAMED &#10;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.edu.upeu.asistencia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pe.edu.upeu.asistencia.conexion.ConnDB" />
+      <module name="Asistencia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.edu.upeu.asistencia.conexion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AsistenciaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Asistencia" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pe.edu.upeu.asistencia.AsistenciaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Aplicacion" />
+      <item itemvalue="Application.ConnDB" />
+      <item itemvalue="Spring Boot.AsistenciaApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Aplicacion" />
+        <item itemvalue="Application.ConnDB" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f42485c-0148-40e5-87f0-39c8379c84eb" name="Changes" comment="" />
+      <created>1756053273928</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756053273928</updated>
+      <workItem from="1756053275171" duration="336000" />
+      <workItem from="1756053721949" duration="2637000" />
+      <workItem from="1756056487352" duration="59000" />
+      <workItem from="1756056715991" duration="125000" />
+      <workItem from="1756135227519" duration="384000" />
+      <workItem from="1756500291165" duration="10000" />
+      <workItem from="1756500366368" duration="3417000" />
+      <workItem from="1756731735840" duration="858000" />
+      <workItem from="1756740318237" duration="3655000" />
+      <workItem from="1756862024731" duration="1938000" />
+      <workItem from="1756880950612" duration="236000" />
+      <workItem from="1757034091197" duration="1096000" />
+      <workItem from="1757036415697" duration="148000" />
+      <workItem from="1757036865878" duration="117000" />
+      <workItem from="1757078031972" duration="2131000" />
+      <workItem from="1757098393029" duration="2915000" />
+      <workItem from="1757101672233" duration="486000" />
+      <workItem from="1757103004957" duration="45000" />
+      <workItem from="1757103088357" duration="17000" />
+      <workItem from="1757103117027" duration="125000" />
+      <workItem from="1757103269157" duration="449000" />
+      <workItem from="1757103741243" duration="4291000" />
+      <workItem from="1757329923243" duration="943000" />
+      <workItem from="1757345113112" duration="104000" />
+      <workItem from="1757345525451" duration="6638000" />
+      <workItem from="1757352757213" duration="562000" />
+      <workItem from="1757353347594" duration="1151000" />
+      <workItem from="1757360828625" duration="224000" />
+      <workItem from="1757369540598" duration="712000" />
+      <workItem from="1757687479408" duration="501000" />
+      <workItem from="1757703243445" duration="2001000" />
+      <workItem from="1757705797765" duration="233000" />
+      <workItem from="1757715123736" duration="157000" />
+      <workItem from="1757715313566" duration="45000" />
+      <workItem from="1757725344116" duration="1121000" />
+      <workItem from="1757726849607" duration="403000" />
+      <workItem from="1757728327631" duration="2060000" />
+      <workItem from="1757947823562" duration="166000" />
+      <workItem from="1758913392941" duration="8895000" />
+      <workItem from="1758922440576" duration="102000" />
+      <workItem from="1759031405132" duration="18000" />
+      <workItem from="1759124703495" duration="154000" />
+      <workItem from="1759124871667" duration="3237000" />
+      <workItem from="1759159308401" duration="8894000" />
+      <workItem from="1759185184214" duration="4000" />
+      <workItem from="1759516323897" duration="5340000" />
+      <workItem from="1759577711303" duration="2341000" />
+      <workItem from="1759764407548" duration="3400000" />
+    </task>
+    <task id="LOCAL-00001" summary="add database connection and participant retrieval functionality">
+      <option name="closed" value="true" />
+      <created>1758920887786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758920887786</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add Font Awesome 5.15.4 styles and scripts for enhanced icon support">
+      <option name="closed" value="true" />
+      <created>1759578136070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759578136070</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev-JpaORM" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add database connection and participant retrieval functionality" />
+    <MESSAGE value="refactor participant service to use JPA repository and update entity mappings" />
+    <MESSAGE value="add Font Awesome 5.15.4 styles and scripts for enhanced icon support" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Font Awesome 5.15.4 styles and scripts for enhanced icon support" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
