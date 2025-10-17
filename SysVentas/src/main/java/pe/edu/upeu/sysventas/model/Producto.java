@@ -18,7 +18,7 @@ public class Producto {
     @Column(name = "id_producto")
     private Long idProducto;
     //@NotNull(message = "El nombre no puede estar vacío")
-    //@Size(min = 2, max = 120, message = "El nombre debe tener entre 2 y 120 caracteres")
+//@Size(min = 2, max = 120, message = "El nombre debe tener entre 2 y 120 caracteres")
     @Column(name = "nombre", nullable = false, length = 120)
     private String nombre;
     //@Positive(message = "El Precio Unitario debe ser positivo")
@@ -41,7 +41,7 @@ public class Producto {
     @JoinColumn(name = "id_categoria", referencedColumnName =
             "id_categoria",
             nullable = false, foreignKey = @ForeignKey(name =
-            "FK_CATEGORIA_PRODUCTO"))
+            "FK_CATEGORIA_PRODUCTO") )
     private Categoria categoria;
     //@NotNull(message = "Marca no puede estar vacío")
     @ManyToOne
