@@ -31,7 +31,7 @@ public class SysVentasApplication extends Application {
         builder.application().setWebApplicationType(WebApplicationType.NONE);
         ctx=builder.run(getParameters().getRaw().toArray(new
                 String[0]));
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/main_producto.fxml"));
         loader.setControllerFactory(ctx::getBean);
         parent = loader.load();
     }
