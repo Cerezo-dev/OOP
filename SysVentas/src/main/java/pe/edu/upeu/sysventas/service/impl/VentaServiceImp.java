@@ -16,10 +16,7 @@ import javax.sql.DataSource;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-<<<<<<< HEAD
 import java.sql.Connection;
-=======
->>>>>>> bdc55c90ee1ae47c1aea6fd14b5a3237c220aac1
 import java.sql.SQLException;
 import java.util.HashMap;
 
@@ -67,13 +64,9 @@ public class VentaServiceImp extends CrudGenericServiceImp<Venta, Long> implemen
         JasperDesign jdesign = JRXmlLoader.load(getFile("comprobante.jrxml"));
         JasperReport jreport = JasperCompileManager.compileReport(jdesign);
         // Llenar el informe
-<<<<<<< HEAD
         try (Connection conn = dataSource.getConnection()) {
             return JasperFillManager.fillReport(jreport, param, conn);
             //return JasperFillManager.fillReport(jreport, param, dataSource.getConnection());
         }
-=======
-        return JasperFillManager.fillReport(jreport, param, dataSource.getConnection());
->>>>>>> bdc55c90ee1ae47c1aea6fd14b5a3237c220aac1
     }
 }

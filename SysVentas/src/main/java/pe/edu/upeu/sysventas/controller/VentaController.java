@@ -309,6 +309,15 @@ public class VentaController {
         }
         daoC.deleteCarAll(dniRuc.getText());
         listar();
+        try {
+            jasperPrint = daoV.runReport(idX.getIdVenta());
+            Platform.runLater(() -> {
+                ReportAlert reportAlert = new ReportAlert(jasperPrint);
+                reportAlert.show();
+            });
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
