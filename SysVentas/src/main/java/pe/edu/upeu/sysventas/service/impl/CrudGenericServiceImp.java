@@ -46,4 +46,8 @@ public abstract class CrudGenericServiceImp<T,ID> implements ICrudGenericService
         }
         getRepo().deleteById(id);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bdc55c90ee1ae47c1aea6fd14b5a3237c220aac1

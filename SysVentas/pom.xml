@@ -106,12 +106,20 @@
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>
 			<artifactId>jasperreports</artifactId>
+<<<<<<< HEAD
 			<version>6.21.5</version>
+=======
+			<version>7.0.3</version>
+>>>>>>> bdc55c90ee1ae47c1aea6fd14b5a3237c220aac1
 		</dependency>
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-swing</artifactId>
+<<<<<<< HEAD
 			<version>21.0.2</version>
+=======
+			<version>11-ea+24</version>
+>>>>>>> bdc55c90ee1ae47c1aea6fd14b5a3237c220aac1
 		</dependency>
 		<dependency>
 			<groupId>win.zqxu</groupId>

@@ -50,6 +50,7 @@
 2025-10-22T00:12:33.442-05:00  INFO 15652 --- [SysVentas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-10-22T00:12:33.445-05:00  INFO 15652 --- [SysVentas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-10-22T00:12:33.447-05:00  INFO 15652 --- [SysVentas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+<<<<<<< HEAD
 2025-11-12T01:21:26.917-05:00  INFO 14324 --- [SysVentas] [JavaFX-Launcher] o.s.boot.SpringApplication               : Starting application using Java 24.0.2 with PID 14324 (started by unacu in C:\Users\unacu\OneDrive - Universidad Peruana Unión\BACKUP-Documentos\GitHub\OOP\SysVentas)
 2025-11-12T01:21:26.932-05:00  INFO 14324 --- [SysVentas] [JavaFX-Launcher] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
 2025-11-12T01:21:29.012-05:00  INFO 14324 --- [SysVentas] [JavaFX-Launcher] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -99,3 +100,5 @@
 2025-11-12T20:05:50.750-05:00  INFO 16204 --- [SysVentas] [JavaFX-Launcher] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2025-11-12T20:05:51.400-05:00  INFO 16204 --- [SysVentas] [JavaFX-Launcher] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
 2025-11-12T20:05:53.694-05:00  INFO 16204 --- [SysVentas] [JavaFX-Launcher] o.s.boot.SpringApplication               : Started application in 12.406 seconds (process running for 14.845)
+=======
+>>>>>>> bdc55c90ee1ae47c1aea6fd14b5a3237c220aac1

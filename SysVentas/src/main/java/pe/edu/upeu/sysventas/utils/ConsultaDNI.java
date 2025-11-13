@@ -5,12 +5,18 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+<<<<<<< HEAD
 import org.springframework.stereotype.Component;
+=======
+>>>>>>> bdc55c90ee1ae47c1aea6fd14b5a3237c220aac1
 import pe.edu.upeu.sysventas.dto.PersonaDto;
 
 import java.io.IOException;
 
+<<<<<<< HEAD
 @Component
+=======
+>>>>>>> bdc55c90ee1ae47c1aea6fd14b5a3237c220aac1
 public  class ConsultaDNI {
 
     public PersonaDto consultarDNI(String dni){
