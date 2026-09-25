@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="bp" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.asistencia.control.MainguiController">
+<BorderPane fx:id="bp" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.asistencia.control.MainguiController">
    <top>
       <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
         <menus>
@@ -18,11 +20,33 @@
       </MenuBar>
    </top>
    <center>
-      <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+      <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS" BorderPane.alignment="CENTER">
         <tabs>
-          <Tab text="main menu">
+          <Tab text="Menú Principal" closable="false">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <VBox alignment="CENTER" spacing="25.0">
+                 <padding>
+                    <Insets top="40.0" right="30.0" bottom="40.0" left="30.0"/>
+                 </padding>
+                 <children>
+                    <Label text="Sistema de Gestión de Asistencia y Participantes" textFill="#2b5b84">
+                       <font>
+                          <Font name="System Bold" size="20.0" />
+                       </font>
+                    </Label>
+                    <Label text="Haz clic en un módulo para abrir su formulario:" textFill="#555555">
+                       <font>
+                          <Font size="14.0" />
+                       </font>
+                    </Label>
+                    <HBox alignment="CENTER" spacing="20.0">
+                       <children>
+                          <Button text="👥 Abrir CRUD Participantes" onAction="#abrirParticipantesDirecto" prefHeight="55.0" prefWidth="250.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand;" />
+                          <Button text="📋 Abrir Gestión Asistencia" onAction="#abrirAsistenciaDirecto" prefHeight="55.0" prefWidth="250.0" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand;" />
+                       </children>
+                    </HBox>
+                 </children>
+              </VBox>
             </content>
           </Tab>
         </tabs>

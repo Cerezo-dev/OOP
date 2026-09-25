@@ -53,18 +53,21 @@ public class MainguiController {
         // En Linux, el ComboBox dentro de un menú puede perder el foco y cerrar el menú automáticamente.
         // Esto es por cómo JavaFX maneja los eventos de foco en sistemas basados en GTK.
 
-        //Tollbar opcion
+        // Toolbar opción
         ToolBar toolBar = new ToolBar();
         ComboBox<String> comboBoxEstiloBarra = new ComboBox<>();
         comboBoxEstiloBarra.getItems().addAll("Estilo por Defecto", "Estilo Oscuro", "Estilo Azul", "Estilo Verde", "Estilo Rosado");
         comboBoxEstiloBarra.setOnAction(event -> cambiarEstiloBarra(comboBoxEstiloBarra.getValue()));
+        
+        Button btnIrParticipantes = new Button("👥 CRUD Participantes");
+        btnIrParticipantes.setOnAction(e -> abrirParticipantesDirecto());
+
+        Button btnIrAsistencia = new Button("📋 Asistencia");
+        btnIrAsistencia.setOnAction(e -> abrirAsistenciaDirecto());
+
         toolBar.getItems().add(new Label("Estilo:"));
         toolBar.getItems().add(comboBoxEstiloBarra);
-
-        //opcion original
-        //menu2.getItems().add(new SeparatorMenuItem());
-        //menu2.getItems().add(customMenuEstilo);
-        //menuBar.getMenus().add(menu2);
+        toolBar.getItems().addAll(new Separator(), btnIrParticipantes, btnIrAsistencia);
 
         VBox topBar = new VBox();
         topBar.getChildren().addAll(menuBar, toolBar);
@@ -187,6 +190,14 @@ public class MainguiController {
 
     private void abrirArchivoArchivofxml(String rutaArchivo, String titulo) {
         try {
+            // Si la pestaña ya existe, simplemente la seleccionamos
+            for (Tab tab : tabPane.getTabs()) {
+                if (tab.getText().equalsIgnoreCase(titulo)) {
+                    tabPane.getSelectionModel().select(tab);
+                    return;
+                }
+            }
+
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(rutaArchivo));
             fxmlLoader.setControllerFactory(context::getBean);
             Parent root = fxmlLoader.load();
@@ -196,12 +207,23 @@ public class MainguiController {
             scrollPane.setFitToHeight(true);
 
             Tab newTab = new Tab(titulo, scrollPane);
-            tabPane.getTabs().clear();
             tabPane.getTabs().add(newTab);
+            tabPane.getSelectionModel().select(newTab);
 
         } catch (Exception ex) {
+            System.err.println("Error al abrir la pestaña (" + titulo + "): " + ex.getMessage());
             ex.printStackTrace();
         }
+    }
+
+    @FXML
+    public void abrirParticipantesDirecto() {
+        abrirArchivoArchivofxml("/fxml/main_participante.fxml", "Gestion Participante");
+    }
+
+    @FXML
+    public void abrirAsistenciaDirecto() {
+        abrirArchivoArchivofxml("/fxml/main_asistencia.fxml", "Gestion Asistencia");
     }
 
     class MenuListener {

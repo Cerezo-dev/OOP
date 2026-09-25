@@ -26,11 +26,11 @@ public abstract class ParticipanteRepository {
                 "VALUES(?, ?, ?, ?, ?, 1);";
         try {
             pst= con.prepareStatement(sql);
-            pst.setString(1,p.getDni().getValue());
-            pst.setString(2,p.getNombre().getValue());
-            pst.setString(3,p.getApellidos().getValue());
-            pst.setString(4, p.getCarrera().name());
-            pst.setString(5,p.getTipoParticipante().name());
+            pst.setString(1, p.getDni() != null ? p.getDni().getValue() : "");
+            pst.setString(2, p.getNombre() != null ? p.getNombre().getValue() : "");
+            pst.setString(3, p.getApellidos() != null ? p.getApellidos().getValue() : "");
+            pst.setString(4, p.getCarrera() != null ? p.getCarrera().name() : Carrera.GENERAL.name());
+            pst.setString(5, p.getTipoParticipante() != null ? p.getTipoParticipante().name() : TipoParticipante.ASISTENTE.name());
             pst.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -38,21 +38,30 @@ public abstract class ParticipanteRepository {
     }
 
     public List<Participante> findAll(){
-        participantes =new ArrayList<>();
+        participantes = new ArrayList<>();
         try {
-            pst=con.prepareStatement("SELECT * FROM participante");
-            rs=pst.executeQuery();
+            pst = con.prepareStatement("SELECT * FROM participante");
+            rs = pst.executeQuery();
             while(rs.next()){
-                Participante p=new Participante();
+                Participante p = new Participante();
                 p.setDni(new SimpleStringProperty(rs.getString("dni")));
                 p.setNombre(new SimpleStringProperty(rs.getString("nombre")));
                 p.setApellidos(new SimpleStringProperty(rs.getString("apellidos")));
-                p.setCarrera(Carrera.valueOf(rs.getString("carrera")));
-                p.setTipoParticipante(TipoParticipante.valueOf(rs.getString("tipo_participante")));
+                
+                String carreraStr = rs.getString("carrera");
+                if (carreraStr != null) {
+                    try { p.setCarrera(Carrera.valueOf(carreraStr)); } catch (Exception ignored) {}
+                }
+                
+                String tipoStr = rs.getString("tipo_participante");
+                if (tipoStr != null) {
+                    try { p.setTipoParticipante(TipoParticipante.valueOf(tipoStr)); } catch (Exception ignored) {}
+                }
+                
                 participantes.add(p);
             }
-        }catch(SQLException e){
-            System.out.println(e.getMessage());
+        } catch(SQLException e){
+            System.err.println("Error al listar participantes: " + e.getMessage());
         }
         return participantes;
     }
@@ -66,12 +75,12 @@ public abstract class ParticipanteRepository {
 
         try {
             pst=con.prepareStatement(sql);
-            pst.setString(++i, p.getNombre().getValue());
-            pst.setString(++i, p.getApellidos().getValue());
-            pst.setString(++i, p.getCarrera().name());
-            pst.setString(++i, p.getTipoParticipante().name());
-            pst.setBoolean(++i, p.getEstado().getValue());
-            pst.setString(++i, p.getDni().getValue());
+            pst.setString(++i, p.getNombre() != null ? p.getNombre().getValue() : "");
+            pst.setString(++i, p.getApellidos() != null ? p.getApellidos().getValue() : "");
+            pst.setString(++i, p.getCarrera() != null ? p.getCarrera().name() : Carrera.GENERAL.name());
+            pst.setString(++i, p.getTipoParticipante() != null ? p.getTipoParticipante().name() : TipoParticipante.ASISTENTE.name());
+            pst.setBoolean(++i, p.getEstado() != null ? p.getEstado().getValue() : true);
+            pst.setString(++i, p.getDni() != null ? p.getDni().getValue() : "");
             pst.executeUpdate();
 
         } catch (SQLException e) {

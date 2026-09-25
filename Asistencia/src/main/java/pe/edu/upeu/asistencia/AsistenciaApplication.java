@@ -28,6 +28,7 @@ public class AsistenciaApplication extends Application {
 	@Override
 	public void init() throws Exception {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(AsistenciaApplication.class);
+		builder.headless(false);
 		builder.application().setWebApplicationType(WebApplicationType.NONE);
 		context=builder.run(getParameters().getRaw().toArray(new String[0]));
 
